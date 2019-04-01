@@ -10,6 +10,13 @@ body{
     margin: auto;
     overflow: hidden;
 }
+.dark{
+    padding: 15px;
+    background-color: #354248;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 ul{
     margin: 0;
@@ -50,7 +57,7 @@ header nav{
     margin: 10px;
 }
 
-header .highlight, header .current a{
+header .current a{
     color: #32a0c2;
     font-weight: bold;
 }
@@ -105,7 +112,7 @@ header a:hover{
     color: #353637;
     padding-left: 20px;
     padding-right: 20px;
-}
+    }
 
 #boxes{
     margin-top: 20px;
@@ -125,6 +132,32 @@ footer{
     background: #32a0c2;
     text-align: center;
 }
+artical#main-col{
+    float: left;
+    width: 65%;
+}
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    padding: 5px;
+}
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border:#cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #32a0c2;
+}
+aside#sidebar input, aside#sidebar textarea{
+    width: 90%;
+    padding: 5px; 
+}
+
+ul#services h3{
+    border-bottom: #353637 solid 1px;
+
+}
 
 @media(max-width: 768px){
     header #branding,
@@ -132,7 +165,9 @@ footer{
     header nav li,
     #newsletter h1,
     #newsletter form,
-    #boxes .box{
+    #boxes .box,
+    artical#main-col,
+    aside#sidebar {
         float: none;
         text-align: center;
         width: 100%;
@@ -145,8 +180,14 @@ footer{
         display: block;
         width: 100%;
     }
-    #newsletter form input[type="email"]{
+    #newsletter form input[type="email"]
+    .contact input,
+    .contact textarea,
+    .contact label {
         width: 100%;
         margin-bottom: 7px;
     }
+}
+.m-t-1{
+    margin-top: 1em;
 }
